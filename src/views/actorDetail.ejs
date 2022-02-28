@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= actor.first_name %> </title>
+    <link rel='stylesheet' href='/css/style.css' />
+
+</head>
+<body>
+    <figure>
+        <img src="/img/logo-DH.png" alt="Logo Digital House">
+    </figure>
+    <h1><%= actor.first_name %> </h1>    
+    <br>
+    <p>ID: <%= actor.id %> </p>
+    <p>PRIMER NOMBRE: <%= actor.first_name %> </p>
+    <p>APELLIDO: <%= actor.last_name %> </p>
+    <p>RATING: <%= actor.rating %> </p>
+    <br>
+    <section>
+        <!--Aquí debe colocar los botones de Modificar - Borrar y Listado de Películas-->
+        <a class="botonEditar" href="/actors/edit/<%= actor.id %> ">Editar Actor</a>
+        <a class="botonBorrar" href="/actors/delete/<%= actor.id %> ">Borrar Actor</a>
+        
+    </section>
+
+</body>
+</html>
